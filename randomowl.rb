@@ -18,7 +18,7 @@ end
 def memeify(text)
 	open('stock/' + rand(49).to_s + '.png', 'rb') do |f|
 		memeImage = MemeCaptain.meme_top_bottom(f, '', text)
-	    memeImage
+		memeImage
 	end
 end
 
