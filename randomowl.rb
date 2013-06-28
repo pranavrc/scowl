@@ -13,8 +13,8 @@ end
 
 def memeify(text)
 	open('http://mebe.co/owl.jpeg?' + rand(49).to_s, 'rb') do |f|
-	  memeImage = MemeCaptain.meme_top_bottom(f, '', text)
-	  memeImage
+		memeImage = MemeCaptain.meme_top_bottom(f, '', text)
+	    memeImage
 	end
 end
 
