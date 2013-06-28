@@ -4,6 +4,10 @@ require 'open-uri'
 require 'sinatra'
 require 'meme_captain'
 
+get '/' do
+	send_file File.join('stock/root.jpg')
+end
+
 get '/*' do
 	respImg = memeify(params[:splat][0])
 	imgName = random_string + '.jpg'
