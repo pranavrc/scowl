@@ -12,7 +12,7 @@ get '/*' do
 end
 
 def memeify(text)
-	open('http://mebe.co/owl.jpeg?' + rand(49).to_s, 'rb') do |f|
+	open('stock/' + rand(49).to_s + '.png', 'rb') do |f|
 		memeImage = MemeCaptain.meme_top_bottom(f, '', text)
 	    memeImage
 	end
